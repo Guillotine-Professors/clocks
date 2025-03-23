@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.2.3",
     "@pqina/flip": "^1.8.4",
     "bootstrap": "^5.3.3",
     "next": "^15.2.3",

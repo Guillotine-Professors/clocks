@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DefaultNavBar from "@/lib/navbar";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         <DefaultNavBar/>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-CZ51ZB9V9J" />
     </html>
   );
 }
