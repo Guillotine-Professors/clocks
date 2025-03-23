@@ -1,101 +1,82 @@
-import Image from "next/image";
+"use client"
+// import Image from "next/image";
+import Link from "next/link";
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container";
+import { useState } from "react";
+import FlapNowtime from "@/lib/clocks/nowclock";
+import FlapDiffClockTile from "@/lib/clocks/diffclocktile";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/nextjs-github-pages/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [ntime, setNtime] = useState(new Date())
+  setTimeout(()=>setNtime(new Date()),300);
+  return (<Col style={{display: "flex",
+    flexDirection: "row", flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center"}}>
+    <Col xxs={12} xs={12} sm={11} md={10} lg={8} xl={7} xxl={6}>
+      <Container style={{margin:0, padding:0}}>
+      <Container style={{margin:0, padding:0}}>
+      <FlapNowtime ntime={ntime}/>
+      {/* <h4>흘러가는 시계</h4> */}
+      </Container>
+      <Container style={{margin:0, padding:0}}>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/nextjs-github-pages/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <Container style={{margin:0, padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-12-03T22:27:00.000+09:00")}
+      msgTop="12.3 비상계엄이 선포된 지" msgright="지났습니다."/>
+      </Container>
+      
+      <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-12-14T17:03:00.000+09:00")}
+      msgTop="윤석열 탄핵소추안이 가결된 지" msgright="지났습니다."/>
+      </Container>
+
+      <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2025-02-13T05:00:00.000+09:00")}
+      msgTop="고진수 서비스연맹 관광레저산업노조 세종호텔지부장이 세종호텔 앞 지하차도 안내 구조물에서 고공농성을 한 지" msgright="지났습니다."/>
+      </Container>
+
+      {/* <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-12-14T17:03:00.000+09:00")}
+      msgTop="세종호텔 농성장" msgright="지났습니다."/>
+      </Container> */}
+
+      <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2025-03-14T04:00:00.000+09:00")}
+      msgTop="김형수 금속노조 거통고지회장이 한화빌딩 앞 사다리없는 철탑에서 고공농성을 한 지" msgright="지났습니다."/>
+      </Container>
+
+      {/* <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2025-01-06T00:00:00.000+09:00")}
+      msgTop="한화오션 상경투쟁" msgright="지났습니다."/>
+      </Container> */}
+
+      <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-01-08T00:00:00.000+09:00")}
+      msgTop="한국옵티칼하이테크의 박정혜, 소현숙씨가 구미공장에서 고공농성을 한 지" msgright="지났습니다."/>
+      </Container>
+
+      {/* <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2022-11-04T00:00:00.000+09:00")}
+      msgTop="한국옵티칼 정리해고" msgright="지났습니다."/>
+      </Container> */}
+
+      </Container>
+      {/* <h4>멈춘 시계</h4>
+      멈춘 시계가 없습니다. */}
+      </Container>
+      <Container>
+      <footer className="items-center justify-center">
+        <div className="items-center justify-center" style={{width:100+"%"}}>투쟁시계 / 단두대학교 교수회 제공</div>
+        <div className="items-center justify-center" style={{width:100+"%"}}>
+        제작 : <Link target="_blank" href="https://x.com/isaack___">twitter:isaack___(토스트아재)</Link>, <Link target="_blank"href="https://x.com/guillotine_prof">twitter:guillotine_prof(단두대학교 교수회)</Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/nextjs-github-pages/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/nextjs-github-pages/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/nextjs-github-pages/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div>사업장 투쟁의 경우, 해당 사업장의 지속 투쟁 기록 중 가장 마지막 것만 표시하였습니다. 추가하실 것이 있으신 분은, guillotine_prof@protonmail.ch 로 연락주십시오. </div>
       </footer>
-    </div>
+      </Container>
+    </Col>
+    </Col>
   );
 }
