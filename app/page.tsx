@@ -1,7 +1,6 @@
 "use client"
 // import Image from "next/image";
 import Link from "next/link";
-import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container";
 import { useState } from "react";
@@ -73,7 +72,7 @@ export default function Home() {
         <div className="items-center justify-center" style={{width:100+"%"}}>
         제작 : <Link target="_blank" href="https://x.com/isaack___">twitter:isaack___(토스트아재)</Link>, <Link target="_blank"href="https://x.com/guillotine_prof">twitter:guillotine_prof(단두대학교 교수회)</Link>
         </div>
-        <div>사업장 투쟁의 경우, 해당 사업장의 지속 투쟁 기록 중 가장 마지막 것만 표시하였습니다. 추가하실 것이 있으신 분은, guillotine_prof@protonmail.ch 로 연락주십시오. </div>
+        <div>사업장 투쟁의 경우, 해당 사업장의 지속 투쟁 기록 중 가장 마지막 것만 표시하였습니다. 추가하실 것이 있으신 분은, guillotine.univ@protonmail.ch 로 연락주십시오. </div>
       </footer>
       </Container>
     </Col>
