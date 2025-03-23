@@ -1,0 +1,29 @@
+.inblock{
+  display: inline-block;
+}
+
+.flaptile [data-kind="digit"] {
+    /* // set fonts and add borders, margins, backgrounds, etc. here */
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    line-height: 1em;
+    width: 1.1ch;
+    height: 1em;
+    text-align: center;
+  }
+  
+  .flaptile [data-kind="digit"][data-mode="words"] {
+    /* // width override for single-word flaps */
+    width: 100%;
+  }
+  
+  .flaptile [data-kind="digit"][data-mode="alpha"] {
+    /* // width override for A-Z flaps */
+    width: 1.7ch;  
+  }
+  
+  .flaptile [data-kind="hinge"] {
+    /* // set the width of the hinge stripe */
+    height: 0.04em;
+  }
