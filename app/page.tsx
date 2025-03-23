@@ -9,7 +9,7 @@ import FlapDiffClockTile from "@/lib/clocks/diffclocktile";
 
 export default function Home() {
   const [ntime, setNtime] = useState(new Date())
-  setTimeout(()=>setNtime(new Date()),300);
+  setTimeout(()=>setNtime(new Date()),200);
   return (<Col style={{display: "flex",
     flexDirection: "row", flexWrap: "wrap",
     justifyContent: "center",
