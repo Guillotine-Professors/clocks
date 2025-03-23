@@ -11,7 +11,7 @@ function FlapNowtime(props:{ntime:Date}){ return <Container>
   Flapclock(props.ntime.getMonth()+1,2)
 }월{" "}
 {
-  Flapclock(props.ntime.getMonth()+1,2)
+  Flapclock(props.ntime.getDate(),2)
 }일{" "}
 {
   Flapclock(props.ntime.getHours(),2)
