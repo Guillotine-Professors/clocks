@@ -53,7 +53,7 @@ export default function Home() {
       </Container> */}
 
       <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
-      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-01-08T00:00:00.000+09:00")}
+      <FlapDiffClockTile ntime={ntime} otime={new Date("2024-01-08T03:10:00.000+09:00")}
       msgTop="한국옵티칼하이테크의 박정혜, 소현숙씨가 구미공장에서 고공농성을 한 지" msgright="지났습니다."/>
       </Container>
 
