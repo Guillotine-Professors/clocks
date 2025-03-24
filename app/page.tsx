@@ -8,7 +8,7 @@ export default function Home() {
   const [ntime, setNtime] = useState(new Date())
   setTimeout(()=>setNtime(new Date()),200);
   return (
-      <Container style={{margin:0, padding:0}}>
+      <>
       <Container style={{margin:0, padding:0}}>
       <FlapNowtime ntime={ntime}/>
       {/* <h4>흘러가는 시계</h4> */}
@@ -62,7 +62,8 @@ export default function Home() {
 
       </Container>
       {/* <h4>멈춘 시계</h4>
-      멈춘 시계가 없습니다. */}
-      </Container>
+        멈춘 시계가 없습니다. */}
+      </>
+      
   );
 }
