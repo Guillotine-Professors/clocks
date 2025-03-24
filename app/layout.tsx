@@ -19,10 +19,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "투쟁시계",
+  title: {
+    template: '%s | 투쟁시계',
+    default: '투쟁시계',
+  },
   description: "투쟁과 관련 시간 정보를 제공합니다.",
   twitter: {
-    title: "투쟁 시계",
+    title: {
+      template: '%s | 투쟁시계',
+      default: '투쟁시계',
+    },
     description: "투쟁과 관련 시간 정보를 제공합니다.",
     creator: "@guillotine_prof",
   },
