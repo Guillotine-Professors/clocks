@@ -35,7 +35,7 @@ function YoonTimePage(){
 
     <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
     <FlapDiffClockTile ntime={new Date("2025-01-15T10:33:00.000+09:00")} otime={new Date("2024-12-31T09:25:00.000+09:00")}
-    msgTop="윤석열이 구속영장이 발부된 지" msgright="지나, 체포되었습니다." desc="2024년 12월 31일 09시 25분경 발부 확인,2025년 1월 15일 10시 33분 체포"/>
+    msgTop="윤석열이 체포영장이 발부된 지" msgright="지나, 체포되었습니다." desc="2024년 12월 31일 09시 25분경 1차 체포영장 발부 확인, 2025년 1월 6일 1차 체포영장 만료. 2025년 1월 7일 2차 체포영장 발부, 2025년 1월 15일 10시 33분 체포"/>
     </Container>
 
     <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
