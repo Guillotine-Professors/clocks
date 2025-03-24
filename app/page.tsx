@@ -1,7 +1,4 @@
 "use client"
-// import Image from "next/image";
-import Link from "next/link";
-import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container";
 import { useState } from "react";
 import FlapNowtime from "@/lib/clocks/nowclock";
