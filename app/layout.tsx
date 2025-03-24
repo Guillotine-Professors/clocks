@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "사업장 투쟁시계",
+  title: "투쟁시계",
   description: "투쟁과 관련 시간 정보를 제공합니다.",
   twitter: {
     title: "투쟁 시계",
