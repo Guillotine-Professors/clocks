@@ -10,11 +10,7 @@ import FlapDiffClockTile from "@/lib/clocks/diffclocktile";
 export default function Home() {
   const [ntime, setNtime] = useState(new Date())
   setTimeout(()=>setNtime(new Date()),200);
-  return (<Col style={{display: "flex",
-    flexDirection: "row", flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center"}}>
-    <Col xxs={12} xs={12} sm={11} md={10} lg={8} xl={7} xxl={6}>
+  return (
       <Container style={{margin:0, padding:0}}>
       <Container style={{margin:0, padding:0}}>
       <FlapNowtime ntime={ntime}/>
@@ -71,16 +67,5 @@ export default function Home() {
       {/* <h4>멈춘 시계</h4>
       멈춘 시계가 없습니다. */}
       </Container>
-      <Container>
-      <footer className="items-center justify-center">
-        <div className="items-center justify-center" style={{width:100+"%"}}>투쟁시계 / 단두대학교 교수회 제공</div>
-        <div className="items-center justify-center" style={{width:100+"%"}}>
-        제작 : <Link target="_blank" href="https://x.com/isaack___">twitter:isaack___(토스트아재)</Link>, <Link target="_blank"href="https://x.com/guillotine_prof">twitter:guillotine_prof(단두대학교 교수회)</Link>
-        </div>
-        <div>사업장 투쟁의 경우, 해당 사업장의 지속 투쟁 기록 중 가장 마지막 것만 표시하였습니다. 추가하실 것이 있으신 분은, guillotine.univ@protonmail.ch 로 연락주십시오. </div>
-      </footer>
-      </Container>
-    </Col>
-    </Col>
   );
 }
