@@ -23,9 +23,14 @@ function YoonTimePage(){
     msgTop="윤석열 탄핵소추안이 가결된 지" msgright="지났습니다." desc={"2024년 12월 14일 17시 03분 탄핵소추안 가결 후 국회 본회의 종료"}/>
     </Container>
 
-    <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+    {/* <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
     <FlapDiffClockTile ntime={ntime} otime={new Date("2025-02-25T22:14:00.000+09:00")}
     msgTop="윤석열 탄핵심판의 헌법재판소 변론절차가 종료된 지" msgright="지났습니다." desc={"2025년 02월 25일 22시 14분 윤석열 탄핵심판 최종변론 종료"}/>
+    </Container> */}
+
+    <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+    <FlapDiffClockTile ntime={ntime} otime={new Date("2025-04-04T11:00:00.000+09:00")}
+    msgTop="윤석열 탄핵심판의 선고기일이" msgright="남았습니다." up={false} desc={"2025년 04월 04일 11시 00분 윤석열 탄핵심판 선고기일"}/>
     </Container>
 
     <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
