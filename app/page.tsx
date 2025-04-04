@@ -14,14 +14,14 @@ export default function Home() {
       </Container>
 
       <Container style={{margin:0, padding:0}}>
-      <Container style={{margin:0, padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      {/* <Container style={{margin:0, padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
       <FlapDiffClockTile ntime={ntime} otime={new Date("2024-12-03T22:27:00.000+09:00")}
       msgTop="12.3 비상계엄이 선포된 지" msgright="지났습니다."/>
-      </Container>
+      </Container> */}
 
-      <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
-      <FlapDiffClockTile ntime={ntime} otime={new Date("2025-04-04T11:00:00.000+09:00")}
-      msgTop="윤석열 탄핵심판의 선고기일이" msgright="남았습니다." up={false}/>
+      <Container style={{margin:0, padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
+      <FlapDiffClockTile ntime={new Date("2025-04-04T11:22:00.000+09:00")} otime={new Date("2024-12-03T22:27:00.000+09:00")}
+      msgTop="12.3 비상계엄이 선포된 지" msgright="지나, 윤석열이 파면되었습니다." desc={"다만, 아직 12.3 비상계엄 및 내란사태에 대해 남은 사항이 있습니다."}/>
       </Container>
       
       {/* <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
