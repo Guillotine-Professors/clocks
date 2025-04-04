@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import FlapDiffClock from "./diffclock";
-import React, { Reac } from "react";
+import React from "react";
 
 function FlapDiffClockTile(props:{ntime:Date, otime:Date, msgTop?:string, msgBottom?:string, msgleft?:string, msgright?:string, up?:boolean, desc?:string}){
 
