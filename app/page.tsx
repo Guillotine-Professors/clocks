@@ -51,7 +51,7 @@ export default function Home() {
 
       <Container style={{margin:0, marginTop:1+"em", padding:0, borderWidth:0.5+'pt', border:'solid', borderRadius:1+'em'}}>
       <FlapDiffClockTile ntime={ntime} otime={new Date("2024-01-08T03:10:00.000+09:00")}
-      msgTop="한국옵티칼하이테크의 박정혜, 소현숙씨가 구미공장에서 고공농성을 한 지" msgright="지났습니다."/>
+      msgTop="박정혜 금속노조 한국옵티칼하이테크지회 수석부지회장이  니토덴코 산하 한국옵티칼하이테크 구미공장에서 고공농성을 한 지" msgright="지났습니다." desc="소현숙 조직부장은 건강악화로 2025년 4월 27일 오전 5시 30분, 고공농성 476일차에 고공농성을 중단했습니다."/>
       </Container>
 
       </Container>
